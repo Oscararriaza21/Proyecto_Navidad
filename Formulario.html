@@ -7,13 +7,16 @@
     <title>Página Principal</title>
 </head>
 <body style=" margin: 0;font-family: Arial, Helvetica, sans-serif;background-color: #ffffff;">
-
+<!--Cabecera: logo + menu de navegación-->
     <header style="background-color: white;box-shadow: 0 4px 10px rgb(0,0,0,0.8);text-align: center;">
+        <!--Menu horizontal con enlaces a otras páginas-->
         <table style="width: 100%;border-collapse: collapse;max-width: 1200px;margin: 0 auto;">
             <tr>
                 <td style="padding: 20px; text-align: left;">
+                    <!--Logo de la empresa-->
                     <img src="./assets/img/iamgenlogo.png" alt="Logo" style="width: 100px;">
                 </td>
+                <!--Enlaces de navegación-->
                 <th style="padding: 20px;">
                     <a href="index.html" style="text-decoration: none; color: black; font-size: 18px;font-weight: bold;">Inicio
 
@@ -35,6 +38,7 @@
             </tr>
 
         </table>
+        <!--Información de novedades-->
         <div style="background:linear-gradient(90deg,#000000,#333333);color:white;font-weight: bold;padding: 10xp;font-size: 14px;letter-spacing: 1px;">
             ✨ Novedades todas las semanas | Calidad y estilo para tu look perfecto | 🌟 Ofertas en ropa 🌟
         </div>
@@ -42,11 +46,13 @@
 
 
     </header>
+        <!--Formulario de registro-->
     <main style="padding: 100px 20px;display: flex;justify-content: center;">
         <form  style="background-color: white;padding: 50px;border-radius: 16px;max-width: 500px;width: 100%;box-shadow: 0px 10px 25px rgb(0,0,0,0.15);">
             <h1 style="text-align: center;margin-bottom: 30px;">Resgistro Alare</h1>
             <label for="Nombre">Nombre Completo</label>
             <br>
+            <!--Datos personales-->
             <input type="text" id="Nombre" name="Nombre" placeholder="Introduce tu nombre" style="width: 100%; padding: 12px;margin: 10px 0 20px 0;" required>
 
             <label for="email">Correo Electrónico</label>
@@ -60,7 +66,7 @@
             <label for="fecha">Fecha de nacimiento</label>
             <br>
             <input type="date" id="fecha" name="fecha" style="width: 100%; padding: 12px;margin: 10px 0 20px 0;" required>
-
+            <!--selección de género-->
             <label>Género</label>
             <br>
             <input type="radio" name="genero" id="Hombre" value="Hombre"> 
@@ -71,20 +77,22 @@
             <br>
             <input type="radio" name="genero" id="Otro" value="Otro"> 
             <label for="Otro">Otro</label>
-
+            <!--Sección de mensaje-->
             <label for="mensaje">Mensaje</label>
             <br>
             <textarea name="mensaje" id="mensaje" rows="4" placeholder="Escriba su mensaje aquí....." style="width: 
             100%;padding: 12px;margin-bottom: 20px;"></textarea>
-
+            <!--Aceptación de términos y condiciones-->
             <input type="checkbox"  id="condiciones" required>
             <label for="condiciones">Acepto los términos y condiciones</label>
             <br>
             <br>
+            <!--Botón de envío-->
             <button type="submit" style="width: 100%; padding: 14px; background-color: black; color: white; border: none; border-radius: 30px; cursor: pointer;font-size: 16px;">Enviar Formulario</button>
         </form>
 
     </main>
+        <!--Pie de página-->
         <footer style="background-color: black;color: white;text-align: center;padding: 25px; font-size: 14px;">
                 <p style="margin: 0;">&copy; 2025 Alare. Todos los derechos reservados.</p>
             </footer>
